@@ -28,12 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            lblNumber1 = new Label();
+            lblNumber2 = new Label();
+            txtNumber1 = new TextBox();
+            txtNumber2 = new TextBox();
+            txtResult = new TextBox();
+            btnCalculate = new Button();
+            SuspendLayout();
+            // 
+            // lblNumber1
+            // 
+            lblNumber1.AutoSize = true;
+            lblNumber1.Location = new Point(52, 37);
+            lblNumber1.Name = "lblNumber1";
+            lblNumber1.Size = new Size(78, 20);
+            lblNumber1.TabIndex = 0;
+            lblNumber1.Text = "Number 1:";
+            // 
+            // lblNumber2
+            // 
+            lblNumber2.AutoSize = true;
+            lblNumber2.Location = new Point(52, 70);
+            lblNumber2.Name = "lblNumber2";
+            lblNumber2.Size = new Size(78, 20);
+            lblNumber2.TabIndex = 1;
+            lblNumber2.Text = "Number 2:";
+            // 
+            // txtNumber1
+            // 
+            txtNumber1.Location = new Point(151, 34);
+            txtNumber1.Name = "txtNumber1";
+            txtNumber1.Size = new Size(125, 27);
+            txtNumber1.TabIndex = 2;
+            // 
+            // txtNumber2
+            // 
+            txtNumber2.Location = new Point(151, 67);
+            txtNumber2.Name = "txtNumber2";
+            txtNumber2.Size = new Size(125, 27);
+            txtNumber2.TabIndex = 3;
+            // 
+            // txtResult
+            // 
+            txtResult.Location = new Point(52, 163);
+            txtResult.Name = "txtResult";
+            txtResult.ReadOnly = true;
+            txtResult.Size = new Size(224, 27);
+            txtResult.TabIndex = 4;
+            // 
+            // btnCalculate
+            // 
+            btnCalculate.Location = new Point(52, 100);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(224, 57);
+            btnCalculate.TabIndex = 5;
+            btnCalculate.Text = "Calculate";
+            btnCalculate.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(335, 237);
+            Controls.Add(btnCalculate);
+            Controls.Add(txtResult);
+            Controls.Add(txtNumber2);
+            Controls.Add(txtNumber1);
+            Controls.Add(lblNumber2);
+            Controls.Add(lblNumber1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblNumber1;
+        private Label lblNumber2;
+        private TextBox txtNumber1;
+        private TextBox txtNumber2;
+        private TextBox txtResult;
+        private Button btnCalculate;
     }
 }
