@@ -1,6 +1,6 @@
 ﻿namespace WinFormsBasicAdditionCalculator
 {
-    partial class Form1
+    partial class FormBasicAdditionCalculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -39,7 +39,7 @@
             // lblNumber1
             // 
             lblNumber1.AutoSize = true;
-            lblNumber1.Location = new Point(52, 37);
+            lblNumber1.Location = new Point(105, 58);
             lblNumber1.Name = "lblNumber1";
             lblNumber1.Size = new Size(78, 20);
             lblNumber1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // lblNumber2
             // 
             lblNumber2.AutoSize = true;
-            lblNumber2.Location = new Point(52, 70);
+            lblNumber2.Location = new Point(105, 91);
             lblNumber2.Name = "lblNumber2";
             lblNumber2.Size = new Size(78, 20);
             lblNumber2.TabIndex = 1;
@@ -56,21 +56,21 @@
             // 
             // txtNumber1
             // 
-            txtNumber1.Location = new Point(151, 34);
+            txtNumber1.Location = new Point(204, 55);
             txtNumber1.Name = "txtNumber1";
             txtNumber1.Size = new Size(125, 27);
             txtNumber1.TabIndex = 2;
             // 
             // txtNumber2
             // 
-            txtNumber2.Location = new Point(151, 67);
+            txtNumber2.Location = new Point(204, 88);
             txtNumber2.Name = "txtNumber2";
             txtNumber2.Size = new Size(125, 27);
             txtNumber2.TabIndex = 3;
             // 
             // txtResult
             // 
-            txtResult.Location = new Point(52, 163);
+            txtResult.Location = new Point(105, 184);
             txtResult.Name = "txtResult";
             txtResult.ReadOnly = true;
             txtResult.Size = new Size(224, 27);
@@ -78,26 +78,26 @@
             // 
             // btnCalculate
             // 
-            btnCalculate.Location = new Point(52, 100);
+            btnCalculate.Location = new Point(105, 121);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(224, 57);
             btnCalculate.TabIndex = 5;
             btnCalculate.Text = "Calculate";
             btnCalculate.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FormBasicAdditionCalculator
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(335, 237);
+            ClientSize = new Size(446, 281);
             Controls.Add(btnCalculate);
             Controls.Add(txtResult);
             Controls.Add(txtNumber2);
             Controls.Add(txtNumber1);
             Controls.Add(lblNumber2);
             Controls.Add(lblNumber1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormBasicAdditionCalculator";
+            Text = "Basic Addition Calculator";
             ResumeLayout(false);
             PerformLayout();
         }
