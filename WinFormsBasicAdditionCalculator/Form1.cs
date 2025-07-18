@@ -9,8 +9,16 @@ namespace WinFormsBasicAdditionCalculator
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            int sum = int.Parse(txtNumber1.Text) + int.Parse(txtNumber2.Text);
-            txtResult.Text = $"Sum: {sum}";
+            if (int.TryParse(txtNumber1.Text, out int number1) &&
+                int.TryParse(txtNumber2.Text, out int number2))
+            {
+                int sum = int.Parse(txtNumber1.Text) + int.Parse(txtNumber2.Text);
+                txtResult.Text = $"Sum: {sum}";
+            }
+            else
+            {
+                MessageBox.Show("Please enter valid integers (int32) in both fields.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
