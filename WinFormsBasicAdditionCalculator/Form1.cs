@@ -1,8 +1,8 @@
 namespace WinFormsBasicAdditionCalculator
 {
-    public partial class Form1 : Form
+    public partial class FormBasicAdditionCalculator : Form
     {
-        public Form1()
+        public FormBasicAdditionCalculator()
         {
             InitializeComponent();
         }
