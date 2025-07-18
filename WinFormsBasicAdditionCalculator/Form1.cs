@@ -10,7 +10,7 @@ namespace WinFormsBasicAdditionCalculator
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             int sum = int.Parse(txtNumber1.Text) + int.Parse(txtNumber2.Text);
-            txtResult.Text = sum.ToString();
+            txtResult.Text = $"Sum: {sum}";
         }
     }
 }
