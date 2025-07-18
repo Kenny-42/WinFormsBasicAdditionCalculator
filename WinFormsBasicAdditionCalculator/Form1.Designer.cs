@@ -95,6 +95,7 @@
             btnNewCalculation.TabIndex = 6;
             btnNewCalculation.Text = "New Calculation";
             btnNewCalculation.UseVisualStyleBackColor = true;
+            btnNewCalculation.Click += btnNewCalculation_Click;
             // 
             // FormBasicAdditionCalculator
             // 
