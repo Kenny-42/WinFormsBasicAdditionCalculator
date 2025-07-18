@@ -34,6 +34,7 @@
             txtNumber2 = new TextBox();
             txtResult = new TextBox();
             btnCalculate = new Button();
+            btnNewCalculation = new Button();
             SuspendLayout();
             // 
             // lblNumber1
@@ -86,11 +87,22 @@
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
+            // btnNewCalculation
+            // 
+            btnNewCalculation.Location = new Point(105, 217);
+            btnNewCalculation.Name = "btnNewCalculation";
+            btnNewCalculation.Size = new Size(224, 29);
+            btnNewCalculation.TabIndex = 6;
+            btnNewCalculation.Text = "New Calculation";
+            btnNewCalculation.UseVisualStyleBackColor = true;
+            btnNewCalculation.Click += btnNewCalculation_Click;
+            // 
             // FormBasicAdditionCalculator
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(446, 281);
+            Controls.Add(btnNewCalculation);
             Controls.Add(btnCalculate);
             Controls.Add(txtResult);
             Controls.Add(txtNumber2);
@@ -111,5 +123,6 @@
         private TextBox txtNumber2;
         private TextBox txtResult;
         private Button btnCalculate;
+        private Button btnNewCalculation;
     }
 }
